@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KhmerAutoCorrection.Core\KhmerAutoCorrection.Core.csproj" />
+    <ProjectReference Include="..\KhmerAutoCorrection.SpellChecker\KhmerAutoCorrection.SpellChecker.csproj" />
+  </ItemGroup>
+
+</Project>
