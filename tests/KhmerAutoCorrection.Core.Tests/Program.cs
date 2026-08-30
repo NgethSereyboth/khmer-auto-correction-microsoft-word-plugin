@@ -45,7 +45,12 @@ AssertTokens(mixed, new[] { "កម្ពុជា", "២០២៦" }, new[] { t
 AssertEqual(6, mixed[0].Start, "Token start should map to the original string.");
 AssertEqual(13, mixed[0].End, "Token end should map to the original string.");
 
-string fullDictionaryPath = Path.Combine(Environment.CurrentDirectory, "src", "KhmerAutoCorrection.Core", "Assets", "KhmerDictionary.tsv");
+string fullDictionaryPath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "src", "KhmerAutoCorrection.Core", "Assets", "KhmerDictionary.tsv");
+if (!File.Exists(fullDictionaryPath))
+{
+    // Try alternative path when running from different directory
+    fullDictionaryPath = "/workspace/src/KhmerAutoCorrection.Core/Assets/KhmerDictionary.tsv";
+}
 var fullDictionary = KhmerDictionary.Load(fullDictionaryPath);
 AssertEqual(101107, fullDictionary.Count, "The packaged dictionary should preserve every upstream entry.");
 Assert(fullDictionary.Contains("កម្ពុជា"), "The packaged dictionary should contain common Khmer words.");

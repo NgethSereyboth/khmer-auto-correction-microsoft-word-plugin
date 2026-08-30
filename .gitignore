@@ -1,0 +1,35 @@
+```
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+.vs/
+.ReSharper*/
+*.userprefs
+
+# IDE - VS Code
+.vscode/
+
+# NuGet Packages
+*.nupkg
+packages/
+
+# Project specific
+**/Debug/
+**/Release/
+*.suo
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.sln.docstates
+*.userosscache
+*.suo.*
+.projectile
+```

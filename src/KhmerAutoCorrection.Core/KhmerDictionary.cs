@@ -28,6 +28,14 @@ public sealed class KhmerDictionary
 
     public long TotalFrequency { get; }
 
+    /// <summary>
+    /// Gets an enumerable of all words in the dictionary.
+    /// </summary>
+    public IEnumerable<string> GetWords()
+    {
+        return _words;
+    }
+
     public bool Contains(string word)
     {
         return word != null && _words.Contains(word);
