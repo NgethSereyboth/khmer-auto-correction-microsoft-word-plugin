@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KhmerAutoCorrection.Core\KhmerAutoCorrection.Core.csproj" />
+    <ProjectReference Include="..\KhmerAutoCorrection.SpellChecker\KhmerAutoCorrection.SpellChecker.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Office.Interop.Word" Version="15.0.4797.1004" />
+    <Reference Include="Microsoft.Office.Tools.Common" HintPath="$(MSBuildProgramFiles32)\Microsoft Visual Studio Tools for Office\OA16_Explorer\Microsoft.Office.Tools.Common.dll" Condition="Exists('$(MSBuildProgramFiles32)\Microsoft Visual Studio Tools for Office\OA16_Explorer\Microsoft.Office.Tools.Common.dll')" />
+  </ItemGroup>
+
+</Project>

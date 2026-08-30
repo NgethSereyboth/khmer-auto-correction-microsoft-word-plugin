@@ -1,35 +1,31 @@
 ```
 # Build results
-bin/
-obj/
-out/
+[Bb]in/
+[Oo]bj/
+[Dd]ist/
+[Bb]uild/
 
 # User-specific files
-.vs/
-.ReSharper*/
+*.user
+*.userosscache
+*.suo
 *.userprefs
 
-# IDE - VS Code
+# Log files
+*.log
+
+# Visual Studio Code
 .vscode/
 
-# NuGet Packages
-*.nupkg
-packages/
+# Temporary files
+*.tmp
+*.temp
 
-# Project specific
-**/Debug/
-**/Release/
-*.suo
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-.builds
-*.pidb
-*.svclog
-*.sln.docstates
-*.userosscache
-*.suo.*
-.projectile
+# Environment files
+.env
+.env.local
+*.env.*
+
+# Package manager
+packages/
 ```
