@@ -1,35 +1,66 @@
 ```
 # Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Dd]epends/
+intermediate/
+[Bb]uild/
 bin/
 obj/
-out/
 
 # User-specific files
-.vs/
-.ReSharper*/
+*.user
+*.userosscache
+*.sln.docstates
 *.userprefs
 
-# IDE - VS Code
+# Visual Studio Code
 .vscode/
 
-# NuGet Packages
-*.nupkg
-packages/
+# IDEs
+.idea/
 
-# Project specific
-**/Debug/
-**/Release/
-*.suo
-*.user
-*.aps
-*.pch
-*.vspscc
-*.vssscc
-.builds
-*.pidb
-*.svclog
-*.sln.docstates
-*.userosscache
-*.suo.*
-.projectile
+# Environment
+.env
+.env.local
+*.env.*
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Compiled files
+*.dll
+*.exe
+*.pdb
+*.nupkg
+*.msi
+*.msp
+*.msm
+
+# Packages
+node_modules/
+jspm_packages/
+
+# Testing
+coverage/
+*.gcov
+*.lcov
+*.profdata
+*.coverage
+
+# Temporary files
+*.tmp
+*.temp
+*~
 ```
