@@ -1,66 +1,31 @@
 ```
 # Build results
-[Dd]ebug/
-[Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
-x64/
-x86/
-[Dd]epends/
-intermediate/
+[Bb]in/
+[Oo]bj/
+[Dd]ist/
 [Bb]uild/
-bin/
-obj/
 
 # User-specific files
 *.user
 *.userosscache
-*.sln.docstates
+*.suo
 *.userprefs
+
+# Log files
+*.log
 
 # Visual Studio Code
 .vscode/
 
-# IDEs
-.idea/
+# Temporary files
+*.tmp
+*.temp
 
-# Environment
+# Environment files
 .env
 .env.local
 *.env.*
 
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Icon?
-desktop.ini
-
-# Compiled files
-*.dll
-*.exe
-*.pdb
-*.nupkg
-*.msi
-*.msp
-*.msm
-
-# Packages
-node_modules/
-jspm_packages/
-
-# Testing
-coverage/
-*.gcov
-*.lcov
-*.profdata
-*.coverage
-
-# Temporary files
-*.tmp
-*.temp
-*~
+# Package manager
+packages/
 ```
