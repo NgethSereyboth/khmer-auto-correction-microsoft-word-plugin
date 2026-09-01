@@ -20,4 +20,11 @@
     <Reference Include="Microsoft.Office.Tools.Common" HintPath="$(MSBuildProgramFiles32)\Microsoft Visual Studio Tools for Office\OA16_Explorer\Microsoft.Office.Tools.Common.dll" Condition="Exists('$(MSBuildProgramFiles32)\Microsoft Visual Studio Tools for Office\OA16_Explorer\Microsoft.Office.Tools.Common.dll')" />
   </ItemGroup>
 
+  <!-- Dictionary file as content -->
+  <ItemGroup>
+    <Content Include="Assets\KhmerDictionary.tsv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

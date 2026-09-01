@@ -47,7 +47,8 @@ namespace KhmerAutoCorrection.WordAddIn
             string dictionaryPath = System.IO.Path.Combine(
                 System.IO.Path.GetDirectoryName(typeof(ThisAddIn).Assembly.Location) ?? 
                 Environment.CurrentDirectory,
-                "khmer_dictionary.txt");
+                "Assets",
+                "KhmerDictionary.tsv");
 
             if (!System.IO.File.Exists(dictionaryPath))
             {
@@ -55,18 +56,18 @@ namespace KhmerAutoCorrection.WordAddIn
                 dictionaryPath = System.IO.Path.Combine(
                     Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
                     "KhmerAutoCorrection",
-                    "khmer_dictionary.txt");
+                    "Assets",
+                    "KhmerDictionary.tsv");
             }
 
             if (!System.IO.File.Exists(dictionaryPath))
             {
                 throw new Exception(
                     $"Dictionary file not found at: {dictionaryPath}\n" +
-                    "Please ensure the khmer_dictionary.txt file is installed with the add-in.");
+                    "Please ensure the KhmerDictionary.tsv file is installed with the add-in.");
             }
 
-            _dictionary = new KhmerDictionary();
-            _dictionary.LoadFromFile(dictionaryPath);
+            _dictionary = Core.KhmerDictionary.Load(dictionaryPath);
 
             _spellCheckEngine = new SpellCheckEngine(_dictionary, maxEditDistance: 3, maxSuggestions: 10);
             _underlinedRanges = new List<Word.Range>();

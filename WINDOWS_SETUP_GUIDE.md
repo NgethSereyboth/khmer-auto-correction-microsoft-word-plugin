@@ -230,11 +230,31 @@ Install-Package symspell
 4. Click **OK**
 
 #### 4.3 Copy Dictionary File
-1. Copy `data/khmer_dictionary.txt` to the WordAddIn project folder
-2. Right-click the file in Solution Explorer → **Properties**
-3. Set:
-   - **Build Action:** `Content`
-   - **Copy to Output Directory:** `Copy always`
+
+**✅ Already Done!** The dictionary file has been copied to the correct location:
+
+```
+src/KhmerAutoCorrection.WordAddIn/Assets/KhmerDictionary.tsv
+```
+
+**On Windows, verify:**
+1. In Solution Explorer, expand `KhmerAutoCorrection.WordAddIn` project
+2. Check that the `Assets` folder exists with `KhmerDictionary.tsv` inside
+3. If not visible, click **Show All Files** button in Solution Explorer
+4. Right-click `Assets/KhmerDictionary.tsv` → **Include In Project** (if needed)
+5. Right-click the file → **Properties**
+6. Verify settings:
+   - **Build Action:** `Content` (already configured in .csproj)
+   - **Copy to Output Directory:** `Copy if newer` (already configured)
+
+**Note:** The `.csproj` file already contains the configuration:
+```xml
+<ItemGroup>
+  <Content Include="Assets\KhmerDictionary.tsv">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+```
 
 #### 4.4 Update Namespace References
 In all WordAddIn files, add:
