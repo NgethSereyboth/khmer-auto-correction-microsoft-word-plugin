@@ -1,0 +1,112 @@
+{
+    "name": "khmer-segment",
+    "version": "0.9.2",
+    "description": "Khmer text segmentation, normalization, cluster and typing-game utilities for JavaScript and TypeScript.",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        },
+        "./dictionary": {
+            "types": "./dist/dictionary/index.d.ts",
+            "import": "./dist/dictionary/index.js",
+            "require": "./dist/dictionary/index.cjs"
+        },
+        "./react": {
+            "types": "./dist/react/index.d.ts",
+            "import": "./dist/react/index.js",
+            "require": "./dist/react/index.cjs"
+        },
+        "./angular": {
+            "types": "./dist/angular/index.d.ts",
+            "import": "./dist/angular/index.js",
+            "require": "./dist/angular/index.cjs"
+        },
+        "./typing": {
+            "types": "./dist/typing/index.d.ts",
+            "import": "./dist/typing/index.js",
+            "require": "./dist/typing/index.cjs"
+        }
+    },
+    "files": [
+        "dist",
+        "!dist/**/*.map"
+    ],
+    "sideEffects": false,
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "prebuild": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "test": "vitest run",
+        "test:perf": "vitest run --config vitest.perf.config.ts",
+        "test:watch": "vitest",
+        "lint": "tsc --noEmit && eslint src/",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "prepublishOnly": "npm run build && npm run test && npm run lint && npm run format:check",
+        "download:benchmark": "tsx scripts/download-benchmark-data.ts",
+        "test:accuracy": "tsx scripts/benchmark-accuracy.ts",
+        "test:accuracy:errors": "tsx scripts/analyze-benchmark-errors.ts",
+        "test:accuracy:candidates": "tsx scripts/mine-dictionary-candidates.ts",
+        "test:accuracy:check": "npm run test:accuracy && tsx scripts/check-benchmark-regression.ts",
+        "test:accuracy:sweep": "tsx scripts/benchmark-viterbi-penalty.ts",
+        "report:dictionary-size": "tsx scripts/report-dictionary-size.ts",
+        "playground:dev": "npm run dev --prefix playground",
+        "playground:build": "npm run build --prefix playground"
+    },
+    "keywords": [
+        "khmer",
+        "unicode",
+        "segmentation",
+        "nlp",
+        "typescript",
+        "javascript"
+    ],
+    "author": "Phalla Doll",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/phalla-doll/khmer-segment-js.git"
+    },
+    "homepage": "https://github.com/phalla-doll/khmer-segment-js#readme",
+    "bugs": {
+        "url": "https://github.com/phalla-doll/khmer-segment-js/issues"
+    },
+    "peerDependencies": {
+        "@angular/core": ">=17",
+        "react": ">=18"
+    },
+    "peerDependenciesMeta": {
+        "@angular/core": {
+            "optional": true
+        },
+        "react": {
+            "optional": true
+        }
+    },
+    "devDependencies": {
+        "@angular/core": "^20.3.18",
+        "@eslint/js": "^10.0.1",
+        "@huggingface/hub": "^2.11.0",
+        "@testing-library/react": "^16.3.2",
+        "@types/node": "^25.5.2",
+        "@types/react": "^19.2.14",
+        "eslint": "^10.2.0",
+        "jsdom": "^26.1.0",
+        "prettier": "^3.8.1",
+        "react": "^19.2.5",
+        "tsup": "^8.0.0",
+        "tsx": "^4.21.0",
+        "typescript": "^5.0.0",
+        "typescript-eslint": "^8.58.1",
+        "vitest": "^3.0.0"
+    }
+}
