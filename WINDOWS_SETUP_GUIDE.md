@@ -299,7 +299,8 @@ namespace KhmerAutoCorrection.WordAddIn
             // Initialize spell checker
             string dictionaryPath = System.IO.Path.Combine(
                 System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location),
-                "khmer_dictionary.txt");
+                "Assets",
+                "KhmerDictionary.tsv");
             
             _spellChecker = new SpellCheckEngine(dictionaryPath);
 

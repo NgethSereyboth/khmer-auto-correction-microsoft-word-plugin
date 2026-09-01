@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "KhmerAutoCorrection.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/KhmerAutoCorrection.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KhmerAutoCorrection.Core.dll": {}
+        }
+      },
+      "KhmerAutoCorrection.SpellChecker/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "KhmerAutoCorrection.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KhmerAutoCorrection.SpellChecker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KhmerAutoCorrection.SpellChecker.dll": {}
+        }
+      },
+      "KhmerAutoCorrection.WordAddIn/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "KhmerAutoCorrection.Core": "1.0.0",
+          "KhmerAutoCorrection.SpellChecker": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KhmerAutoCorrection.WordAddIn.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KhmerAutoCorrection.WordAddIn.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KhmerAutoCorrection.Core/1.0.0": {
+      "type": "project",
+      "path": "../../src/KhmerAutoCorrection.Core/KhmerAutoCorrection.Core.csproj",
+      "msbuildProject": "../../src/KhmerAutoCorrection.Core/KhmerAutoCorrection.Core.csproj"
+    },
+    "KhmerAutoCorrection.SpellChecker/1.0.0": {
+      "type": "project",
+      "path": "../../src/KhmerAutoCorrection.SpellChecker/KhmerAutoCorrection.SpellChecker.csproj",
+      "msbuildProject": "../../src/KhmerAutoCorrection.SpellChecker/KhmerAutoCorrection.SpellChecker.csproj"
+    },
+    "KhmerAutoCorrection.WordAddIn/1.0.0": {
+      "type": "project",
+      "path": "../../src/KhmerAutoCorrection.WordAddIn/KhmerAutoCorrection.WordAddIn.csproj",
+      "msbuildProject": "../../src/KhmerAutoCorrection.WordAddIn/KhmerAutoCorrection.WordAddIn.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "KhmerAutoCorrection.WordAddIn >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/root/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/workspace/tests/KhmerAutoCorrection.WordAddIn.Tests/KhmerAutoCorrection.WordAddIn.Tests.csproj",
+      "projectName": "KhmerAutoCorrection.WordAddIn.Tests",
+      "projectPath": "/workspace/tests/KhmerAutoCorrection.WordAddIn.Tests/KhmerAutoCorrection.WordAddIn.Tests.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/workspace/tests/KhmerAutoCorrection.WordAddIn.Tests/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/root/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/workspace/src/KhmerAutoCorrection.WordAddIn/KhmerAutoCorrection.WordAddIn.csproj": {
+              "projectPath": "/workspace/src/KhmerAutoCorrection.WordAddIn/KhmerAutoCorrection.WordAddIn.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.424/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
