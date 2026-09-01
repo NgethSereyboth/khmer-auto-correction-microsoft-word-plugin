@@ -1,0 +1,16 @@
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/Assets/KhmerDictionary.tsv
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.deps.json
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.dll
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.pdb
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/KhmerAutoCorrection.Core.dll
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.dll
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/KhmerAutoCorrection.Core.pdb
+/workspace/src/KhmerAutoCorrection.WordAddIn/bin/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.pdb
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.csproj.AssemblyReference.cache
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.AssemblyInfoInputs.cache
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.AssemblyInfo.cs
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.csproj.CoreCompileInputs.cache
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAut.A68AFA8C.Up2Date
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.dll
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/netstandard2.0/KhmerAutoCorrection.WordAddIn.pdb

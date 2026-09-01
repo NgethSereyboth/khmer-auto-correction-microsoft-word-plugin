@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "KhmerAutoCorrection.WordAddIn.Tests/1.0.0": {
+        "dependencies": {
+          "KhmerAutoCorrection.WordAddIn": "1.0.0"
+        },
+        "runtime": {
+          "KhmerAutoCorrection.WordAddIn.Tests.dll": {}
+        }
+      },
+      "KhmerAutoCorrection.Core/1.0.0": {
+        "runtime": {
+          "KhmerAutoCorrection.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KhmerAutoCorrection.SpellChecker/1.0.0": {
+        "dependencies": {
+          "KhmerAutoCorrection.Core": "1.0.0"
+        },
+        "runtime": {
+          "KhmerAutoCorrection.SpellChecker.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KhmerAutoCorrection.WordAddIn/1.0.0": {
+        "dependencies": {
+          "KhmerAutoCorrection.Core": "1.0.0",
+          "KhmerAutoCorrection.SpellChecker": "1.0.0"
+        },
+        "runtime": {
+          "KhmerAutoCorrection.WordAddIn.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KhmerAutoCorrection.WordAddIn.Tests/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KhmerAutoCorrection.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KhmerAutoCorrection.SpellChecker/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "KhmerAutoCorrection.WordAddIn/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

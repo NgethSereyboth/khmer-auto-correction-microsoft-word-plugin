@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = KhmerAutoCorrection.Core
+build_property.ProjectDir = /workspace/src/KhmerAutoCorrection.Core/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

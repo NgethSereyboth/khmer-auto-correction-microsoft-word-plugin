@@ -1,0 +1,11 @@
+/workspace/src/KhmerAutoCorrection.Core/bin/Debug/netstandard2.0/Assets/KhmerDictionary.tsv
+/workspace/src/KhmerAutoCorrection.Core/bin/Debug/netstandard2.0/KhmerAutoCorrection.Core.deps.json
+/workspace/src/KhmerAutoCorrection.Core/bin/Debug/netstandard2.0/KhmerAutoCorrection.Core.dll
+/workspace/src/KhmerAutoCorrection.Core/bin/Debug/netstandard2.0/KhmerAutoCorrection.Core.pdb
+/workspace/src/KhmerAutoCorrection.Core/obj/Debug/netstandard2.0/KhmerAutoCorrection.Core.csproj.AssemblyReference.cache
+/workspace/src/KhmerAutoCorrection.Core/obj/Debug/netstandard2.0/KhmerAutoCorrection.Core.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/src/KhmerAutoCorrection.Core/obj/Debug/netstandard2.0/KhmerAutoCorrection.Core.AssemblyInfoInputs.cache
+/workspace/src/KhmerAutoCorrection.Core/obj/Debug/netstandard2.0/KhmerAutoCorrection.Core.AssemblyInfo.cs
+/workspace/src/KhmerAutoCorrection.Core/obj/Debug/netstandard2.0/KhmerAutoCorrection.Core.csproj.CoreCompileInputs.cache
+/workspace/src/KhmerAutoCorrection.Core/obj/Debug/netstandard2.0/KhmerAutoCorrection.Core.dll
+/workspace/src/KhmerAutoCorrection.Core/obj/Debug/netstandard2.0/KhmerAutoCorrection.Core.pdb

@@ -1,0 +1,154 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "Microsoft.Office.Interop.Word/15.0.4797.1004": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Office.Interop.Word.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Office.Interop.Word.dll": {}
+        }
+      },
+      "KhmerAutoCorrection.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/KhmerAutoCorrection.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KhmerAutoCorrection.Core.dll": {}
+        }
+      },
+      "KhmerAutoCorrection.SpellChecker/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "KhmerAutoCorrection.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KhmerAutoCorrection.SpellChecker.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KhmerAutoCorrection.SpellChecker.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Office.Interop.Word/15.0.4797.1004": {
+      "sha512": "lavTOrMGK/o/t3+gGr7JuVrL8XDdnS0DwPLcYv/StOiysXO4L0C36IXTVtEJo1Mh9Aoxo9a8dgGcPi+faTlv0g==",
+      "type": "package",
+      "path": "microsoft.office.interop.word/15.0.4797.1004",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Microsoft.Office.Interop.Word.dll",
+        "lib/netstandard2.0/Microsoft.Office.Interop.Word.dll",
+        "microsoft.office.interop.word.15.0.4797.1004.nupkg.sha512",
+        "microsoft.office.interop.word.nuspec"
+      ]
+    },
+    "KhmerAutoCorrection.Core/1.0.0": {
+      "type": "project",
+      "path": "../KhmerAutoCorrection.Core/KhmerAutoCorrection.Core.csproj",
+      "msbuildProject": "../KhmerAutoCorrection.Core/KhmerAutoCorrection.Core.csproj"
+    },
+    "KhmerAutoCorrection.SpellChecker/1.0.0": {
+      "type": "project",
+      "path": "../KhmerAutoCorrection.SpellChecker/KhmerAutoCorrection.SpellChecker.csproj",
+      "msbuildProject": "../KhmerAutoCorrection.SpellChecker/KhmerAutoCorrection.SpellChecker.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "KhmerAutoCorrection.Core >= 1.0.0",
+      "KhmerAutoCorrection.SpellChecker >= 1.0.0",
+      "Microsoft.Office.Interop.Word >= 15.0.4797.1004"
+    ]
+  },
+  "packageFolders": {
+    "/root/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/workspace/src/KhmerAutoCorrection.WordAddIn/KhmerAutoCorrection.WordAddIn.csproj",
+      "projectName": "KhmerAutoCorrection.WordAddIn",
+      "projectPath": "/workspace/src/KhmerAutoCorrection.WordAddIn/KhmerAutoCorrection.WordAddIn.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/workspace/src/KhmerAutoCorrection.WordAddIn/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/root/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "/workspace/src/KhmerAutoCorrection.Core/KhmerAutoCorrection.Core.csproj": {
+              "projectPath": "/workspace/src/KhmerAutoCorrection.Core/KhmerAutoCorrection.Core.csproj"
+            },
+            "/workspace/src/KhmerAutoCorrection.SpellChecker/KhmerAutoCorrection.SpellChecker.csproj": {
+              "projectPath": "/workspace/src/KhmerAutoCorrection.SpellChecker/KhmerAutoCorrection.SpellChecker.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "Microsoft.Office.Interop.Word": {
+            "target": "Package",
+            "version": "[15.0.4797.1004, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.30, 8.0.30]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.424/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.csproj.AssemblyReference.cache
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.AssemblyInfoInputs.cache
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.AssemblyInfo.cs
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.csproj.CoreCompileInputs.cache
+/workspace/src/KhmerAutoCorrection.SpellChecker/bin/Debug/netstandard2.0/Assets/KhmerDictionary.tsv
+/workspace/src/KhmerAutoCorrection.SpellChecker/bin/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.deps.json
+/workspace/src/KhmerAutoCorrection.SpellChecker/bin/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.dll
+/workspace/src/KhmerAutoCorrection.SpellChecker/bin/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.pdb
+/workspace/src/KhmerAutoCorrection.SpellChecker/bin/Debug/netstandard2.0/KhmerAutoCorrection.Core.dll
+/workspace/src/KhmerAutoCorrection.SpellChecker/bin/Debug/netstandard2.0/KhmerAutoCorrection.Core.pdb
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAut.F9B538DC.Up2Date
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.dll
+/workspace/src/KhmerAutoCorrection.SpellChecker/obj/Debug/netstandard2.0/KhmerAutoCorrection.SpellChecker.pdb

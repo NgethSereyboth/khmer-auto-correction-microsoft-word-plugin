@@ -1,0 +1,5 @@
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/net8.0-windows/KhmerAutoCorrection.WordAddIn.csproj.AssemblyReference.cache
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/net8.0-windows/KhmerAutoCorrection.WordAddIn.GeneratedMSBuildEditorConfig.editorconfig
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/net8.0-windows/KhmerAutoCorrection.WordAddIn.AssemblyInfoInputs.cache
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/net8.0-windows/KhmerAutoCorrection.WordAddIn.AssemblyInfo.cs
+/workspace/src/KhmerAutoCorrection.WordAddIn/obj/Debug/net8.0-windows/KhmerAutoCorrection.WordAddIn.csproj.CoreCompileInputs.cache
